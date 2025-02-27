@@ -6,6 +6,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 /*
@@ -59,4 +60,21 @@ h6 {
 
 a {
   text-decoration: none;
+}
+
+p {
+  margin-top: 3rem;
+}
+
+table {
+  min-width: 36rem;
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.responsive {
+  overflow: hidden;
+  overflow-x: auto;
+  width: 80rem;
 }
