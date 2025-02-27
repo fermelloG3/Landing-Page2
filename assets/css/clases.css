@@ -247,3 +247,19 @@ textarea {
   background: #eeeeee;
   color: #0a1128;
 }
+
+footer {
+  background: #eeeeee;
+  display: flex;
+  width: 100%;
+}
+
+footer p {
+  width: 100%;
+  display: flex;
+  color: #0a1128;
+  font-size: medium;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 3rem;
+}
