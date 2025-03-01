@@ -42,3 +42,148 @@
 .galley-img img:hover {
   transform: translate(3%, 3%) scale(1.2) rotate(5deg);
 }
+
+@media (max-width: 768px) {
+  .intro-content {
+    grid-template-columns: 1fr;
+  }
+  .white-bg {
+    width: 100%;
+    color: black;
+    background: var(--white-color);
+  }
+
+  section {
+    width: 100%;
+  }
+
+  .column input {
+    padding: 3rem;
+    font-size: large;
+    width: 70rem;
+    height: 5rem;
+    border-radius: 1.5rem;
+  }
+  .email-form input {
+    font-size: large;
+    width: 70rem;
+    height: 5rem;
+    margin-right: 10rem;
+    padding: 3rem;
+    border-radius: 1.5rem;
+  }
+
+  textarea {
+    font-size: large;
+    height: 20rem;
+    width: 70rem;
+    resize: none;
+    padding: 3rem;
+    border-radius: 1.5rem;
+    border: solid 0.5rem #ccc;
+  }
+
+  .contact-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .img-contact img {
+    display: none;
+    max-width: 36rem;
+    min-height: 36rem;
+  }
+  .row {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  footer {
+    background: #eeeeee;
+    display: flex;
+    width: 100%;
+  }
+
+  .main-bg {
+    max-width: 100%;
+    background-image: url(../img/main-bg.svg);
+    background-size: cover;
+    background-position: center center;
+    color: var(--white-color);
+  }
+
+  .main-container {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-container {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    margin-left: 10rem;
+  }
+
+  .nav-container ul li {
+    gap: 10rem;
+    width: 10rem;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--gap);
+    margin-top: 10rem;
+    counter-reset: grid-counter;
+  }
+  html,
+  body {
+    overflow-x: hidden; /* Impede rolagem horizontal */
+    margin: 0;
+    padding: 0;
+  }
+
+  .intro-text-content p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .intro-text-content h2 {
+    text-align: center;
+  }
+
+  .responsive {
+    overflow: hidden;
+    overflow-x: auto;
+    width: 75rem;
+  }
+
+  table td,
+  table th {
+    white-space: nowrap; /* Evita quebra de texto dentro das células */
+  }
+  .galley-img {
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+  }
+
+  .galley-img img {
+    width: 100%;
+  }
+  .grid-text {
+    margin-top: 10rem;
+  }
+
+  .grid-text h2 {
+    text-align: center;
+  }
+  .grid-text p {
+    text-align: center;
+  }
+}
